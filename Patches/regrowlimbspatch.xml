@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+<Operation Class="PatchOperationAdd">
+<xpath>Defs/HediffDef[defName="Deathrest"]</xpath>
+<value>
+ <comps>
+        <li Class="DeathRestRegrowsLimbs.HediffCompProperties_DeathrestRegrowingLimbs">
+            <severityIncrease>0.0004</severityIncrease> <!-- Current is 1/2500 which is 1 hour  -->
+        </li>
+</comps>
+</value>
+</Operation>
+</Patch>
