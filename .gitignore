@@ -1,0 +1,17 @@
+# Build output (intermediate — NOT Assemblies/, which is the distributable DLL)
+Source/**/obj/
+Source/**/bin/
+
+# Visual Studio
+Source/**/.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
