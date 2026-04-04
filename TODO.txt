@@ -1,27 +1,12 @@
 about.xml wiki link: https://rimworldwiki.com/wiki/About.xml
 
 
-Need to make some cs code similar to PowerWorker_LimbRegen.cs
-maybe add to DeathRest code?
+TODO:
+Edit patch which adds comp to make it defensive. See: https://rimworldwiki.com/wiki/Modding_Tutorials/Compatibility
 
-Checkout sanguophage abilities and add this limb regen as an ability
-It will add the Hediff Regrow limb
+Rebalance regrowth timing:
+- Target: ~3 in-game days to fully regrow a limb while deathresting
+- Target: ~9 in-game days to fully regrow a limb outside of deathrest
+- Currently completes in ~1 hour during deathrest (deathrest comp adds 0.0004/tick on top of Hediff_RegrowLimb's 1/180000/tick)
+- Will require tuning both severityIncrease in regrowlimbspatch.xml and the Tick rate in Hediff_RegrowLimb.cs
 
-checkout morepsycasts_partiallygrown hediff and create a similar one
-
-use morepsycasdefs.xml icons/regrow_bodypart for icon
-
-add new Gene i.e GeneDef with prerequisites
-make sure sanguophages have this geneDef
-OR patch existing Gene to give ability RegrowLimb
-
-
-CHECKOUT PowerWorker_LimbRegen for how to get all small parts regening as well so don't have to use power multiple times
-Increase hemogen cost
-Require 1 week cooldown
-
-Extend functionality of HediffDef Deathrest to regrow limbs
-
-Patch Deathrest to have comp which regrows new body parts
-comp that regrows new body parts will add hediff regrowing limb
-regrowing limb will be responsible for regrowing, should be much faster during deathrest

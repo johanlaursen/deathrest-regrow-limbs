@@ -19,6 +19,8 @@ When a vampire (a pawn with the Deathrest hediff) goes into deathrest, a custom 
 
 Once regrowth completes, the missing-part hediff is removed and a notification is sent. Only one limb regrows at a time; subsequent missing parts queue up for the next deathrest.
 
+**Timing:** Two tick sources stack during deathrest — the deathrest comp (`+0.0004/tick`) and the regrowth hediff itself (`+1/180000/tick`) — making regrowth complete in roughly **1 in-game hour** of deathrest. Outside of deathrest the hediff continues ticking at the slower rate, taking up to **3 in-game days** from zero. (These values are subject to change — see [TODO.txt](TODO.txt).)
+
 ### Stack limit increases
 
 The mod also patches stack limits for many vanilla items to reduce micromanagement:
