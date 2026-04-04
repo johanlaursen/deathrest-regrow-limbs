@@ -4,9 +4,9 @@ about.xml wiki link: https://rimworldwiki.com/wiki/About.xml
 TODO:
 Edit patch which adds comp to make it defensive. See: https://rimworldwiki.com/wiki/Modding_Tutorials/Compatibility
 
-Rebalance regrowth timing:
-- Target: ~3 in-game days to fully regrow a limb while deathresting
-- Target: ~9 in-game days to fully regrow a limb outside of deathrest
-- Currently completes in ~1 hour during deathrest (deathrest comp adds 0.0004/tick on top of Hediff_RegrowLimb's 1/180000/tick)
+Rebalance regrowth timing by body part size:
+- Currently using temporary flat values: 3 hours during deathrest, 6 hours outside (for testing)
+- Goal: smaller parts (fingers, toes) regrow faster than larger parts (arms, legs)
+- Chosen approach TBD — candidates are scaling by Part.def.hitPoints, absolute body coverage, or tiered HediffDefs
 - Will require tuning both severityIncrease in regrowlimbspatch.xml and the Tick rate in Hediff_RegrowLimb.cs
 

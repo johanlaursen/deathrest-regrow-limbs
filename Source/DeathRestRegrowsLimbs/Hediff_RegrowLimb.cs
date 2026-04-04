@@ -15,7 +15,7 @@ namespace DeathRestRegrowsLimbs
         {
             base.Tick();
 
-            this.Severity += 1f / 540000f; // 9 days to heal outside deathrest
+            this.Severity += 1f / 15000f; // 6 hours to heal outside deathrest (temporary, see TODO)
 
             if (this.Severity >= 1f)
             {
