@@ -1,6 +1,6 @@
 # Hemogen Regrow Limbs
 
-A RimWorld mod (v1.5) that causes vampires to slowly regrow missing limbs while deathresting.
+A RimWorld mod (v1.6) that causes vampires to slowly regrow missing limbs while deathresting.
 
 **Author:** Ragnar  
 **Requires:** RimWorld + Ideology DLC

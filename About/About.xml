@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Hemogen Regrow Limbs</name>
+    <name>Deathrest Regrow Limbs</name>
     <author>Ragnar</author>
     <packageId>Ragnar.DeathrestRegrowLimbs.01</packageId>
     <supportedVersions>
-        <li>1.5</li>
+        <li>1.6</li>
     </supportedVersions>
 
     <description>
-	Coagulate Gene will provide ability to regrow limbs at the cost of hemogen
+	Deathrest Gene will provide ability to regrow limbs during deathrest
     </description>
 
     <modDependencies>

@@ -6,7 +6,7 @@
 <value>
  <comps>
         <li Class="DeathRestRegrowsLimbs.HediffCompProperties_DeathrestRegrowingLimbs">
-            <severityIncrease>0.0004</severityIncrease> <!-- Current is 1/2500 which is 1 hour  -->
+            <severityIncrease>0.0000037</severityIncrease> <!-- 1/270000 per tick; combined with Tick() rate (1/540000) gives 1/180000 total = 3 days during deathrest -->
         </li>
 </comps>
 </value>

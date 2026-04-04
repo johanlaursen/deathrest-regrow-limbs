@@ -15,7 +15,7 @@ namespace DeathRestRegrowsLimbs
         {
             base.Tick();
 
-            this.Severity += 1f / 180000f; // 3 days to heal
+            this.Severity += 1f / 540000f; // 9 days to heal outside deathrest
 
             if (this.Severity >= 1f)
             {
@@ -157,7 +157,7 @@ namespace DeathRestRegrowsLimbs
             foreach (var hediff in missingParts)
             {
                 // Only start regrowing new limb when no other limb is regrowing
-                if (!pawn.health.hediffSet.hediffs.Any(hd => hd.def.defName == "Hediff_RegrowLimb"))
+                if (!pawn.health.hediffSet.hediffs.Any(hd => hd.def.defName == "Hediff_RegrowLimb") && newHediffs.Count == 0)
                 {
                     Hediff regrowLimb = HediffMaker.MakeHediff(HediffDef.Named("Hediff_RegrowLimb"), pawn, hediff.Part);
                     regrowLimb.Severity = 0.01f; // Initial severity
@@ -165,6 +165,7 @@ namespace DeathRestRegrowsLimbs
 
                     // Mark the old missing part hediff for removal
                     pawn.health.RemoveHediff(hediff);
+                    break; // Only queue one part at a time
                 }
             }
 
